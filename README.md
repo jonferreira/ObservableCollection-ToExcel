@@ -1,11 +1,11 @@
 ObservableCollection-ToExcel
-Supports
+#### Supports
 		Hidden Properties
 		Custom Column Header
 		Custom Sheet Header
 ============================
-Usage Exemple
-
+#### Usage Exemple
+```
 private BindableCollection<Person> _Persons = new BindableCollection<Person>();
 
 public BindableCollection<Person> Persons
@@ -32,3 +32,4 @@ SheetCustomHeader.Add("Description to show up in first line");
 SheetCustomHeader.Add("Description to show up in second line");
 
 Persons.ToExcel(HiddenProperties, PropertiesCustomHeader, SheetCustomHeader, true);
+```
